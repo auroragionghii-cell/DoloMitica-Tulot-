@@ -3,10 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoloMitica Tulot</title>
+    <title>DoloMitica Tulot - Appartamento a Carisolo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #2c3e50;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            color: #ffffff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        section {
+            background: #ffffff;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+        h2 {
+            color: #1e3d59;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e8e8e8;
+            padding-bottom: 10px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .service-card {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid #1e3d59;
+        }
+        .service-card h3 {
+            margin-bottom: 8px;
+            color: #1e3d59;
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #1e3d59;
+            color: #ffffff;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Benvenuti su DoloMitica Tulot!</h1>
-    <p>Il sito e' ufficialmente online.</p>
+
+    <header>
+        <h1>DOLOMITICA TULOT</h1>
+        <p>Respira la montagna, vivi un’esperienza DoloMitica</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="chi-siamo">
+            <h2>CHI SIAMO</h2>
+            <p>Benvenuti in DoloMitica Tulot!</p>
+            <br>
+            <p>Sono Laura e la mia passione per le Dolomiti di Brenta nasce dall'amore per la natura, il silenzio della neve e il profumo dei boschi di Carisolo.</p>
+            <br>
+            <p>Ho creato DoloMitica Tulot per offrire un rifugio accogliente a chi cerca sport, relax e autenticità. Che siate qui per sciare a due passi dalla Tulot o per esplorare i sentieri estivi della Val Rendena, il mio obiettivo è farvi sentire come a casa, circondati dal calore tipico trentino.</p>
+            <br>
+            <p><strong>Non vedo l'ora di ospitarvi!</strong><br><em>Laura</em></p>
+        </section>
+
+        <section id="appartamento">
+            <h2>L’APPARTAMENTO</h2>
+            <p>DoloMitica è un accogliente rifugio nel cuore di Carisolo, pensato per ospitare fino a 7 persone. La soluzione ideale per famiglie o gruppi di amici che vogliono vivere la magia della Val Rendena in totale comfort e relax.</p>
+        </section>
+
+        <section id="servizi">
+            <h2>I NOSTRI SERVIZI</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Parcheggio</h3>
+                    <p>Due posti auto, uno esterno e uno interno coperto da portone con telecomando.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Informazioni turistiche</h3>
+                    <p>Opuscoli con suggerimenti su itinerari, eventi e feste nei dintorni disponibili nell'appartamento.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Deposito</h3>
+                    <p>Spazio dedicato e sicuro per sci e biciclette.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Wi-Fi gratuito</h3>
+                    <p>Connessione internet wireless in tutta la struttura.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Biancheria inclusa</h3>
+                    <p>Lenzuola e set asciugamani inclusi nel prezzo.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; DoloMitica Tulot - Carisolo (TN) | Val Rendena</p>
+    </footer>
+
 </body>
 </html>
