@@ -80,6 +80,48 @@
             border-radius: 6px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
+        .contact-box {
+            background: #f1f5f9;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .btn-submit {
+            background-color: #1e3d59;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 100%;
+        }
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            text-align: center;
+        }
         .social-bar {
             margin-top: 15px;
             display: flex;
@@ -182,6 +224,44 @@
                 <img src="https://static.wixstatic.com/media/9ec50d_9e44f8586319478cb0903a5d39bbe550~mv2.jpeg" alt="Camera da letto">
                 <img src="https://static.wixstatic.com/media/9ec50d_6899e76df0554d15be022ab3dad3f283~mv2.jpeg" alt="Dettaglio Appartamento">
                 <img src="https://static.wixstatic.com/media/9ec50d_d198befe34e340fe9908f858ff0cabde~mv2.jpeg" alt="Panorami e Dintorni">
+            </div>
+        </section>
+
+        <section id="preventivo">
+            <h2>RICHIESTA PREVENTIVO & CONTATTI</h2>
+            <p>Compila il modulo per verificare la disponibilità e richiedere un preventivo senza impegno per il tuo soggiorno a Carisolo.</p>
+            
+            <div class="contact-box">
+                <form action="mailto:auroragionghii@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="nome">Nome e Cognome:</label>
+                        <input type="text" id="nome" name="Nome" required placeholder="Inserisci il tuo nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="Email" required placeholder="la-tua-email@esempio.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="persone">Numero Ospiti:</label>
+                        <input type="number" id="persone" name="Numero_Ospiti" min="1" max="7" placeholder="Es. 4">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date del Soggiorno (Check-in / Check-out):</label>
+                        <input type="text" id="date" name="Date_Soggiorno" placeholder="Es. 10/01 - 17/01">
+                    </div>
+                    <div class="form-group">
+                        <label for="messaggio">Messaggio o richieste particolari:</label>
+                        <textarea id="messaggio" name="Messaggio" rows="4" placeholder="Scrivi qui eventuali domande..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Invia Richiesta Preventivo</button>
+                </form>
+
+                <hr style="margin: 25px 0; border: 0; border-top: 1px solid #ccc;">
+
+                <p style="text-align: center; font-weight: bold;">Preferisci un contatto rapido?</p>
+                <div style="text-align: center;">
+                    <a href="https://wa.me/" target="_blank" class="btn-whatsapp">💬 Scrivici su WhatsApp</a>
+                </div>
             </div>
         </section>
 
