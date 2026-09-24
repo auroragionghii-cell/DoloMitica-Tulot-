@@ -24,10 +24,10 @@
             color: #222222;
             line-height: 1.8;
             background-color: #ffffff;
-            padding-top: 50px;
+            padding-top: 75px;
         }
 
-        /* Menu di navigazione responsive */
+        /* Menu di navigazione su due righe bilanciate */
         nav {
             position: fixed;
             top: 0;
@@ -36,18 +36,19 @@
             background-color: #1a1a1a;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             z-index: 1000;
+            padding: 8px 10px;
         }
         nav ul {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             list-style: none;
-            max-width: 100%;
+            flex-wrap: wrap; /* Permette la disposizione su due righe */
+            max-width: 600px;
             margin: 0 auto;
-            padding: 10px 5px;
+            gap: 6px 12px; /* Distanza tra gli elementi */
         }
         nav li {
-            flex: 1;
             text-align: center;
         }
         nav a {
@@ -55,11 +56,11 @@
             text-decoration: none;
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
-            font-size: 0.62rem; /* Adattato per entrare su qualsiasi telefono */
-            letter-spacing: 0px;
+            font-size: 0.8rem; /* Dimensione grande e leggibile */
+            letter-spacing: 0.8px;
             text-transform: uppercase;
-            padding: 4px 2px;
-            display: block;
+            padding: 3px 6px;
+            display: inline-block;
             transition: opacity 0.2s ease;
         }
         nav a:hover {
@@ -103,7 +104,7 @@
             padding: 30px 0;
             margin-bottom: 30px;
             border-bottom: 1px solid #eeeeee;
-            scroll-margin-top: 60px;
+            scroll-margin-top: 85px;
         }
         section:last-of-type {
             border-bottom: none;
@@ -255,8 +256,15 @@
             letter-spacing: 0.5px;
         }
 
-        /* Ottimizzazione specifica per schermi PC/Tablet */
+        /* Ottimizzazione per PC */
         @media (min-width: 768px) {
+            body {
+                padding-top: 60px;
+            }
+            nav ul {
+                max-width: 1000px;
+                gap: 0 20px;
+            }
             nav a {
                 font-size: 0.85rem;
                 letter-spacing: 1px;
@@ -273,15 +281,15 @@
 </head>
 <body>
 
-    <!-- Menu con spaziatura calcolata per entrare su qualsiasi cellulare -->
+    <!-- Menu distribuito su due righe ben leggibili -->
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#chi-siamo">Chi Siamo</a></li>
-            <li><a href="#appartamento">Casa</a></li>
+            <li><a href="#appartamento">Appartamento</a></li>
             <li><a href="#servizi">Servizi</a></li>
-            <li><a href="#cosa-fare">Attività</a></li>
-            <li><a href="#galleria">Foto</a></li>
+            <li><a href="#cosa-fare">Cosa Fare</a></li>
+            <li><a href="#galleria">Galleria</a></li>
             <li><a href="#preventivo">Contatti</a></li>
         </ul>
     </nav>
@@ -315,7 +323,7 @@
             <h2>L’Appartamento</h2>
             
             <div class="apt-text">
-                L'appartamento DoloMitica Tulot, ristrutturato ad aprile 2026, è un alloggio luminoso ed elegante situato al primo piano di una palazzina servita da ascensore. Caratterizzato da arredi moderni ed accoglienti, offre spazi ben distribuiti ideali per soggiorni in totale comfort e relax. L'ingresso si apre su un unico e spazioso ambiente che unisce la cucina e il soggiorno, con accesso diretto al balcone esterno, perfetto per godersi il sole e l'aria di montagna. La cucina è totalmente equipaggiata e dotata di piano cottura a gas a 4 fuochi, forno, forno a microonde, lavastoviglie, frigorifero, congelatore e un tavolo da pranzo allungabile. Per ogni esigenza di preparazione sono inoltre presenti frullatore, minipimer, bollitore, macchina del caffè a cialde, tostapane e tutte le stoviglie necessarie anche per i più piccoli. Nel soggiorno si trovano un comodo divano e una Smart TV da 40"; in caso di necessità, il divano letto matrimoniale presente nell'area giorno può ospitare due persone aggiuntive. La zona notte comprende due camere da letto: la prima è una camera matrimoniale arredata con letto a due piazze, due comodini, armadio e cassettone, con la possibilità di aggiungere un lettino per neonati su richiesta; la seconda camera è allestita con un letto a castello, un letto singolo, un armadio e uno spazioso comodino. Completa l'alloggio un bagno finestrato dotato di box doccia, phon, cesta per la lavanderia e lavatrice.
+                L'appartamento DoloMitica Tulot, ristrutturato ad aprile 2026, è un alloggio luminoso ed elegante situato al primo piano di una palazzina servita da ascensore. Caratterizzato da arredi moderni ed accoglienti, offre spazi ben distribuiti ideali per soggiorni in totale comfort e relax. L'ingresso si apre su un unico e spazioso ambiente che unisce la cucina e il soggiorno, con accesso diretto al balcone esterno, perfetto per godersi il sole e l'aria di montagna. La cucina è totalmente equipaggiata e dotata di piano cottura a gas a 4 fuochi, forno, forno a microonde, lavastoviglie, frigorifero, congelatore e un tavolo da pranzo allungabile. Per ogni esigenza di preparazione sono inoltre presenti frullatore, minipimer, bollitore, macchina del caffè a cialde, tostapane e tutte le stoviglie necessarie anche per i più piccoli. Nel soggiorno si trovano un comodo divano e una Smart TV da 40"; in caso di necessità, il divano letto matrimoniale presente nell'area giorno può ospitare due persone aggiuntive. La zona notte comprende due camere da letto: la prima è una camera matrimoniale arredata con letto a two piazze, due comodini, armadio e cassettone, con la possibilità di aggiungere un lettino per neonati su richiesta; la seconda camera è allestita con un letto a castello, un letto singolo, un armadio e uno spazioso comodino. Completa l'alloggio un bagno finestrato dotato di box doccia, phon, cesta per la lavanderia e lavatrice.
             </div>
 
             <img src="https://static.wixstatic.com/media/9ec50d_9e44f8586319478cb0903a5d39bbe550~mv2.jpeg" alt="Camera da letto DoloMitica Tulot" class="section-img">
