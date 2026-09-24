@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoloMitica Tulot - Appartamento a Carisolo</title>
+    
+    <!-- Importazione Font Montserrat da Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
     <style>
         * {
             box-sizing: border-box;
@@ -14,21 +20,21 @@
             scroll-behavior: smooth;
         }
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            color: #2c3e50;
+            font-family: 'Montserrat', sans-serif;
+            color: #4a443e;
             line-height: 1.6;
-            background-color: #f8f9fa;
+            background-color: #faf8f5;
             padding-top: 60px;
         }
 
-        /* Menu di navigazione fisso */
+        /* Menu di navigazione fisso - Tonalità Tortora/Beige Scuro */
         nav {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #1e3d59;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            background-color: #8c7a6b;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
             z-index: 1000;
         }
         nav ul {
@@ -48,28 +54,31 @@
             color: #ffffff;
             text-decoration: none;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
             padding: 5px 8px;
             transition: color 0.2s ease-in-out;
+            text-transform: uppercase;
         }
         nav a:hover {
-            color: #ff6e40;
+            color: #f3efe9;
         }
 
         header {
-            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://static.wixstatic.com/media/9ec50d_ead4b70322844ef483d2cc022a62ea70~mv2.jpeg/v1/fill/w_1200,h_800,q_90/9ec50d_ead4b70322844ef483d2cc022a62ea70~mv2.jpeg') center/cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://static.wixstatic.com/media/9ec50d_ead4b70322844ef483d2cc022a62ea70~mv2.jpeg/v1/fill/w_1200,h_800,q_90/9ec50d_ead4b70322844ef483d2cc022a62ea70~mv2.jpeg') center/cover no-repeat;
             color: #ffffff;
             text-align: center;
             padding: 100px 20px;
         }
         header h1 {
             font-size: 2.8rem;
-            letter-spacing: 2px;
+            font-weight: 700;
+            letter-spacing: 3px;
             margin-bottom: 15px;
             text-transform: uppercase;
         }
         header p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 300;
         }
         .container {
@@ -82,21 +91,25 @@
             padding: 40px;
             margin-bottom: 30px;
             border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 15px rgba(140, 122, 107, 0.08);
             scroll-margin-top: 80px;
+            border: 1px solid #f0eae1;
         }
         h2 {
-            color: #1e3d59;
-            font-size: 1.8rem;
+            color: #6e5e51;
+            font-size: 1.7rem;
+            font-weight: 700;
+            letter-spacing: 1px;
             margin-bottom: 20px;
-            border-bottom: 2px solid #e8e8e8;
+            border-bottom: 2px solid #e8e2d8;
             padding-bottom: 10px;
         }
         .apt-details {
             margin-top: 15px;
-            background: #f1f5f9;
+            background: #f8f5f0;
             padding: 20px;
             border-radius: 6px;
+            border-left: 4px solid #8c7a6b;
         }
         .apt-details ul {
             list-style-type: square;
@@ -113,14 +126,15 @@
             margin-top: 20px;
         }
         .service-card, .activity-card {
-            background: #f1f5f9;
+            background: #f8f5f0;
             padding: 20px;
             border-radius: 6px;
-            border-left: 4px solid #1e3d59;
+            border-left: 4px solid #8c7a6b;
         }
         .service-card h3, .activity-card h3 {
             margin-bottom: 8px;
-            color: #1e3d59;
+            color: #6e5e51;
+            font-weight: 600;
         }
         .gallery-grid {
             display: grid;
@@ -133,10 +147,10 @@
             height: 250px;
             object-fit: cover;
             border-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
         .contact-box {
-            background: #f1f5f9;
+            background: #f8f5f0;
             padding: 25px;
             border-radius: 8px;
             margin-top: 20px;
@@ -147,24 +161,35 @@
         .form-group label {
             display: block;
             margin-bottom: 5px;
-            font-weight: bold;
+            font-weight: 600;
+            color: #5c4f44;
         }
         .form-group input, .form-group textarea {
             width: 100%;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid #d9d2c7;
             border-radius: 5px;
-            font-size: 1rem;
+            font-size: 0.95rem;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
         }
         .btn-submit {
-            background-color: #1e3d59;
-            color: #fff;
+            background-color: #8c7a6b;
+            color: #ffffff;
             padding: 12px 25px;
             border: none;
             border-radius: 5px;
-            font-size: 1rem;
+            font-size: 0.95rem;
+            font-family: 'Montserrat', sans-serif;
             cursor: pointer;
             width: 100%;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background-color 0.2s;
+        }
+        .btn-submit:hover {
+            background-color: #6e5e51;
         }
         .btn-whatsapp {
             display: inline-block;
@@ -173,10 +198,10 @@
             padding: 14px 24px;
             border-radius: 6px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
             margin-top: 15px;
             text-align: center;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
         .social-bar {
             margin-top: 15px;
@@ -191,9 +216,9 @@
         footer {
             text-align: center;
             padding: 25px;
-            background: #1e3d59;
+            background: #6e5e51;
             color: #ffffff;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
     </style>
 </head>
@@ -337,9 +362,9 @@
                     <button type="submit" class="btn-submit">Invia Richiesta Preventivo</button>
                 </form>
 
-                <hr style="margin: 25px 0; border: 0; border-top: 1px solid #ccc;">
+                <hr style="margin: 25px 0; border: 0; border-top: 1px solid #d9d2c7;">
 
-                <p style="text-align: center; font-weight: bold;">Preferisci un contatto rapido?</p>
+                <p style="text-align: center; font-weight: 600; color: #5c4f44;">Preferisci un contatto rapido?</p>
                 <div style="text-align: center;">
                     <a href="https://wa.me/393488220460?text=Ciao%20Laura,%20vorrei%20informazioni%20sull'appartamento%20DoloMitica%20Tulot" target="_blank" class="btn-whatsapp">💬 Scrivici su WhatsApp</a>
                 </div>
