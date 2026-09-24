@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoloMitica Tulot - Appartamento a Carisolo</title>
     
-    <!-- Importazione Font Montserrat (Sans-Serif) -->
+    <!-- Importazione Font Eleganti Sottili (Montserrat Light & Cormorant Garamond / Jost) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Montserrat:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
 
     <style>
         * {
@@ -20,11 +20,12 @@
             scroll-behavior: smooth;
         }
         body {
-            font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
-            color: #222222;
+            font-family: 'Jost', 'Montserrat', sans-serif;
+            color: #4a4a4a;
             line-height: 1.8;
             background-color: #ffffff;
             padding-top: 75px;
+            font-weight: 300;
         }
 
         /* Menu di navigazione su due righe */
@@ -54,10 +55,10 @@
         nav a {
             color: #ffffff;
             text-decoration: none;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            font-size: 0.8rem;
-            letter-spacing: 0.8px;
+            font-family: 'Jost', sans-serif;
+            font-weight: 300;
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
             padding: 3px 6px;
             display: inline-block;
@@ -69,60 +70,62 @@
 
         /* Header con la foto della camera da letto con luci LED */
         header {
-            background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://static.wixstatic.com/media/9ec50d_9e44f8586319478cb0903a5d39bbe550~mv2.jpeg') center/cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://static.wixstatic.com/media/9ec50d_9e44f8586319478cb0903a5d39bbe550~mv2.jpeg') center/cover no-repeat;
             color: #ffffff;
             text-align: center;
             padding: 130px 15px 100px 15px;
         }
         header h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.3rem;
-            font-weight: 700;
-            letter-spacing: 2px;
+            font-family: 'Jost', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 200;
+            letter-spacing: 5px;
             text-transform: uppercase;
             margin-bottom: 15px;
             color: #ffffff;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
         }
         header p {
-            font-size: 1.05rem;
-            font-weight: 400;
-            letter-spacing: 0.5px;
+            font-size: 1.1rem;
+            font-weight: 300;
+            font-style: italic;
+            letter-spacing: 1px;
             color: #ffffff;
-            text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
             max-width: 700px;
             margin: 0 auto;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
         }
         section {
             background: #ffffff;
-            padding: 30px 0;
+            padding: 35px 0;
             margin-bottom: 30px;
-            border-bottom: 1px solid #eeeeee;
+            border-bottom: 1px solid #f0f0f0;
             scroll-margin-top: 85px;
         }
         section:last-of-type {
             border-bottom: none;
         }
 
+        /* Titoli principali di sezione sottili ed eleganti */
         h2 {
-            color: #1a1a1a;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.6rem;
-            font-weight: 700;
-            letter-spacing: 1.5px;
+            color: #333333;
+            font-family: 'Jost', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 4px;
             text-transform: uppercase;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             text-align: center;
         }
+
         p {
-            font-size: 0.95rem;
-            color: #444444;
+            font-size: 1rem;
+            color: #555555;
+            font-weight: 300;
         }
 
         .text-center {
@@ -130,14 +133,15 @@
         }
 
         .apt-text {
-            background: #f9f9f9;
+            background: #fafafa;
             padding: 25px;
             border-radius: 4px;
-            border-left: 3px solid #1a1a1a;
+            border-left: 2px solid #555555;
             font-size: 0.95rem;
-            color: #333333;
+            color: #444444;
             text-align: justify;
             margin-bottom: 25px;
+            font-weight: 300;
         }
 
         .section-img {
@@ -146,31 +150,59 @@
             object-fit: cover;
             border-radius: 4px;
             margin-top: 15px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
-        .services-grid, .activity-grid {
+        .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
             margin-top: 20px;
         }
-        .service-card, .activity-card {
-            background: #f9f9f9;
-            padding: 20px;
+        .service-card {
+            background: #fafafa;
+            padding: 22px;
             border-radius: 4px;
-            border-top: 3px solid #1a1a1a;
+            border-top: 2px solid #333333;
         }
-        .service-card h3, .activity-card h3 {
+        .service-card h3 {
             margin-bottom: 8px;
-            color: #1a1a1a;
+            color: #222222;
+            font-size: 1.1rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        /* Sezione Cose da Fare identica allo screenshot Wix */
+        .activity-list {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .activity-item h3 {
+            font-family: 'Jost', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #222222;
+            letter-spacing: 1.5px;
+            margin-bottom: 6px;
+        }
+        .activity-item p {
+            font-family: 'Jost', sans-serif;
+            font-style: italic;
             font-size: 1.05rem;
-            font-weight: 600;
+            color: #666666;
+            font-weight: 300;
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.7;
         }
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
             gap: 12px;
             margin-top: 20px;
         }
@@ -182,7 +214,7 @@
         }
 
         .contact-box {
-            background: #f9f9f9;
+            background: #fafafa;
             padding: 25px;
             border-radius: 4px;
             margin-top: 20px;
@@ -193,10 +225,10 @@
         .form-group label {
             display: block;
             margin-bottom: 6px;
-            font-weight: 600;
+            font-weight: 400;
             font-size: 0.8rem;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
         }
         .form-group input, .form-group textarea {
             width: 100%;
@@ -204,8 +236,9 @@
             border: 1px solid #ddd;
             border-radius: 2px;
             font-size: 0.9rem;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Jost', sans-serif;
             background-color: #ffffff;
+            font-weight: 300;
         }
         .btn-submit {
             background-color: #1a1a1a;
@@ -213,12 +246,12 @@
             padding: 12px 20px;
             border: none;
             border-radius: 2px;
-            font-size: 0.8rem;
-            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            font-family: 'Jost', sans-serif;
             cursor: pointer;
             width: 100%;
-            font-weight: 600;
-            letter-spacing: 1px;
+            font-weight: 400;
+            letter-spacing: 2px;
             text-transform: uppercase;
             transition: background-color 0.2s;
         }
@@ -232,10 +265,11 @@
             padding: 12px 20px;
             border-radius: 4px;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 400;
             margin-top: 15px;
             text-align: center;
             font-size: 0.9rem;
+            letter-spacing: 1px;
         }
         .social-bar {
             margin-top: 20px;
@@ -253,10 +287,11 @@
             background: #1a1a1a;
             color: #ffffff;
             font-size: 0.75rem;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
+            font-weight: 300;
         }
 
-        /* Ottimizzazione per PC */
+        /* Desktop */
         @media (min-width: 768px) {
             body {
                 padding-top: 60px;
@@ -267,11 +302,12 @@
             }
             nav a {
                 font-size: 0.85rem;
-                letter-spacing: 1px;
+                letter-spacing: 1.5px;
                 padding: 4px 8px;
             }
             header h1 {
                 font-size: 3.2rem;
+                letter-spacing: 8px;
             }
             header p {
                 font-size: 1.25rem;
@@ -323,7 +359,7 @@
             <h2>L’Appartamento</h2>
             
             <div class="apt-text">
-                L'appartamento DoloMitica Tulot, ristrutturato ad aprile 2026, è un alloggio luminoso ed elegante situato al primo piano di una palazzina servita da ascensore. Caratterizzato da arredi moderni ed accoglienti, offre spazi ben distribuiti ideali per soggiorni in totale comfort e relax. L'ingresso si apre su un unico e spacioso ambiente che unisce la cucina e il soggiorno, con accesso diretto al balcone esterno, perfetto per godersi il sole e l'aria di montagna. La cucina è totalmente equipaggiata e dotata di piano cottura a gas a 4 fuochi, forno, forno a microonde, lavastoviglie, frigorifero, congelatore e un tavolo da pranzo allungabile. Per ogni esigenza di preparazione sono inoltre presenti frullatore, minipimer, bollitore, macchina del caffè a cialde, tostapane e tutte le stoviglie necessarie anche per i più piccoli. Nel soggiorno si trovano un comodo divano e una Smart TV da 40"; in caso di necessità, il divano letto matrimoniale presente nell'area giorno può ospitare due persone aggiuntive. La zona notte comprende due camere da letto: la prima è una camera matrimoniale arredata con letto a due piazze, due comodini, armadio e cassettone, con la possibilità di aggiungere un lettino per neonati su richiesta; la seconda camera è allestita con un letto a castello, un letto singolo, un armadio e uno spazioso comodino. Completa l'alloggio un bagno finestrato dotato di box doccia, phon, cesta per la lavanderia e lavatrice.
+                L'appartamento DoloMitica Tulot, ristrutturato ad aprile 2026, è un alloggio luminoso ed elegante situato al primo piano di una palazzina servita da ascensore. Caratterizzato da arredi moderni ed accoglienti, offre spazi ben distribuiti ideali per soggiorni in totale comfort e relax. L'ingresso si apre su un unico e spazioso ambiente che unisce la cucina e il soggiorno, con accesso diretto al balcone esterno, perfetto per godersi il sole e l'aria di montagna. La cucina è totalmente equipaggiata e dotata di piano cottura a gas a 4 fuochi, forno, forno a microonde, lavastoviglie, frigorifero, congelatore e un tavolo da pranzo allungabile. Per ogni esigenza di preparazione sono inoltre presenti frullatore, minipimer, bollitore, macchina del caffè a cialde, tostapane e tutte le stoviglie necessarie anche per i più piccoli. Nel soggiorno si trovano un comodo divano e una Smart TV da 40"; in caso di necessità, il divano letto matrimoniale presente nell'area giorno può ospitare due persone aggiuntive. La zona notte comprende due camere da letto: la prima è una camera matrimoniale arredata con letto a due piazze, due comodini, armadio e cassettone, con la possibilità di aggiungere un lettino per neonati su richiesta; la seconda camera è allestita con un letto a castello, un letto singolo, un armadio e uno spazioso comodino. Completa l'alloggio un bagno finestrato dotato di box doccia, phon, cesta per la lavanderia e lavatrice.
             </div>
 
             <!-- Foto esterno/panoramica -->
@@ -356,30 +392,31 @@
             </div>
         </section>
 
+        <!-- Sezione COSE DA FARE stilizzata esattamente come la schermata Wix -->
         <section id="cosa-fare">
             <h2>COSE DA FARE</h2>
-            <div class="activity-grid">
-                <div class="activity-card">
+            <div class="activity-list">
+                <div class="activity-item">
                     <h3>Trekking e natura</h3>
-                    <p>Respira la freschezza delle Alpi tra le meraviglie della Val Genova e della Val Nambrone. Camminate suggestive, panorami mozzafiato e la magia dei rifugi di montagna ti aspettano ad ogni passo.</p>
+                    <p>Respira la freschezza delle Alpi tra le meraviglie della Val Genova e della Val Nambrone.<br>Camminate suggestive, panorami mozzafiato e la magia dei rifugi di montagna ti aspettano ad ogni passo</p>
                 </div>
-                <div class="activity-card">
+                <div class="activity-item">
                     <h3>Sci e montagna</h3>
                     <p>L'emozione della neve a due passi da te: dalle celebri piste di Madonna di Campiglio al Tonale. Con scuola sci per i più piccoli e noleggio attrezzatura, ogni giornata sulla neve sarà perfetta.</p>
                 </div>
-                <div class="activity-card">
+                <div class="activity-item">
                     <h3>Spettacolo dei Laghi</h3>
                     <p>Rinfrescati al Biolago di Pinzolo o lasciati incantare dalle acque cristalline del Lago di Molveno, di Toblino e del maestoso Lago di Garda, tutti facilmente raggiungibili.</p>
                 </div>
-                <div class="activity-card">
+                <div class="activity-item">
                     <h3>Relax</h3>
                     <p>Rigenerati a due passi da casa con una pausa di puro benessere alle vicine Terme di Caderzone.</p>
                 </div>
-                <div class="activity-card">
+                <div class="activity-item">
                     <h3>Attività e divertimento</h3>
                     <p>Dalla ciclabile al golf, fino al tennis e alle uscite a cavallo: ogni giorno un’avventura diversa.</p>
                 </div>
-                <div class="activity-card">
+                <div class="activity-item">
                     <h3>Borghi e Cultura</h3>
                     <p>Immergiti nel fascino dei paesi della Val Rendena, di Campiglio e di Trento.</p>
                 </div>
@@ -428,7 +465,7 @@
 
                 <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eeeeee;">
 
-                <p style="text-align: center; font-weight: 600; color: #1a1a1a;">Preferisci un contatto rapido?</p>
+                <p style="text-align: center; font-weight: 400; color: #1a1a1a;">Preferisci un contatto rapido?</p>
                 <div style="text-align: center;">
                     <a href="https://wa.me/393488220460?text=Ciao%20Laura,%20vorrei%20informazioni%20sull'appartamento%20DoloMitica%20Tulot" target="_blank" class="btn-whatsapp">💬 Scrivici su WhatsApp</a>
                 </div>
