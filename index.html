@@ -438,8 +438,11 @@
             <p class="text-center">Compila il modulo per verificare la disponibilità e richiedere un preventivo senza impegno per il tuo soggiorno a Carisolo.</p>
             
             <div class="contact-box">
-                <!-- Modulo collegato a paolilau@gmail.com tramite Formspree -->
+                <!-- Modulo collegato a paolilau@gmail.com con reindirizzamento automatico al sito -->
                 <form action="https://formspree.io/f/mbglaezv" method="POST">
+                    <!-- Questa riga riporta l'utente sul tuo sito dopo l'invio -->
+                    <input type="hidden" name="_next" value="https://dolomiticatulot.com/#preventivo">
+
                     <div class="form-group">
                         <label for="nome">Nome e Cognome:</label>
                         <input type="text" id="nome" name="Nome" required placeholder="Inserisci il tuo nome">
