@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoloMitica Tulot - Appartamento a Carisolo</title>
     
-    <!-- Importazione Font Eleganti Sottili (Montserrat Light & Cormorant Garamond / Jost) -->
+    <!-- Importazione Font Eleganti Sottili -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Montserrat:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
@@ -110,7 +110,7 @@
             border-bottom: none;
         }
 
-        /* Titoli principali di sezione sottili ed eleganti */
+        /* Titoli principali di sezione */
         h2 {
             color: #333333;
             font-family: 'Jost', sans-serif;
@@ -173,7 +173,7 @@
             letter-spacing: 1px;
         }
 
-        /* Sezione Cose da Fare identica allo screenshot Wix */
+        /* Sezione Cose da Fare */
         .activity-list {
             display: flex;
             flex-direction: column;
@@ -362,7 +362,6 @@
                 L'appartamento DoloMitica Tulot, ristrutturato ad aprile 2026, è un alloggio luminoso ed elegante situato al primo piano di una palazzina servita da ascensore. Caratterizzato da arredi moderni ed accoglienti, offre spazi ben distribuiti ideali per soggiorni in totale comfort e relax. L'ingresso si apre su un unico e spazioso ambiente che unisce la cucina e il soggiorno, con accesso diretto al balcone esterno, perfetto per godersi il sole e l'aria di montagna. La cucina è totalmente equipaggiata e dotata di piano cottura a gas a 4 fuochi, forno, forno a microonde, lavastoviglie, frigorifero, congelatore e un tavolo da pranzo allungabile. Per ogni esigenza di preparazione sono inoltre presenti frullatore, minipimer, bollitore, macchina del caffè a cialde, tostapane e tutte le stoviglie necessarie anche per i più piccoli. Nel soggiorno si trovano un comodo divano e una Smart TV da 40"; in caso di necessità, il divano letto matrimoniale presente nell'area giorno può ospitare due persone aggiuntive. La zona notte comprende due camere da letto: la prima è una camera matrimoniale arredata con letto a due piazze, due comodini, armadio e cassettone, con la possibilità di aggiungere un lettino per neonati su richiesta; la seconda camera è allestita con un letto a castello, un letto singolo, un armadio e uno spazioso comodino. Completa l'alloggio un bagno finestrato dotato di box doccia, phon, cesta per la lavanderia e lavatrice.
             </div>
 
-            <!-- Foto della camera da letto inserita al posto del bagno -->
             <img src="https://static.wixstatic.com/media/9ec50d_9e44f8586319478cb0903a5d39bbe550~mv2.jpeg" alt="Camera da letto DoloMitica Tulot" class="section-img">
         </section>
 
@@ -392,7 +391,7 @@
             </div>
         </section>
 
-        <!-- Sezione COSE DA FARE stilizzata esattamente come la schermata Wix -->
+        <!-- Sezione COSE DA FARE -->
         <section id="cosa-fare">
             <h2>COSE DA FARE</h2>
             <div class="activity-list">
@@ -439,14 +438,15 @@
             <p class="text-center">Compila il modulo per verificare la disponibilità e richiedere un preventivo senza impegno per il tuo soggiorno a Carisolo.</p>
             
             <div class="contact-box">
-                <form action="mailto:auroragionghii@gmail.com" method="post" enctype="text/plain">
+                <!-- Modulo collegato automaticamente a Formspree che invierà l'email a paolilau@gmail.com -->
+                <form action="https://formspree.io/f/xlgkqkvl" method="POST">
                     <div class="form-group">
                         <label for="nome">Nome e Cognome:</label>
                         <input type="text" id="nome" name="Nome" required placeholder="Inserisci il tuo nome">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="Email" required placeholder="la-tua-email@esempio.com">
+                        <label for="email">Email (per essere ricontattato):</label>
+                        <input type="email" id="email" name="email" required placeholder="la-tua-email@esempio.com">
                     </div>
                     <div class="form-group">
                         <label for="persone">Numero Ospiti:</label>
